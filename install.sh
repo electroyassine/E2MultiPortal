@@ -9,16 +9,16 @@
 #
 # ============================================================
 
-ZIP_URL="https://raw.githubusercontent.com/electroyassine/E2MultiPortal/refs/heads/main/E2MultiPortal.zip"
+TAR_URL="https://raw.githubusercontent.com/electroyassine/E2MultiPortal/refs/heads/main/E2MultiPortal.tar.gz"
 DEST="/usr/lib/enigma2/python/Plugins/Extensions"
-TMP="/tmp/E2MultiPortal.zip"
+TMP="/tmp/E2MultiPortal.tar.gz"
 
 echo "============================================="
 echo " E2MultiPortal - Installation / Mise a jour"
 echo "============================================="
 
 echo "[1/5] Telechargement depuis GitHub..."
-wget -q "--no-check-certificate" "$ZIP_URL" -O "$TMP"
+wget -q "--no-check-certificate" "$TAR_URL" -O "$TMP"
 if [ ! -s "$TMP" ]; then
     echo "ERREUR: telechargement echoue."
     exit 1
@@ -28,7 +28,7 @@ echo "[2/5] Suppression de l'ancienne version (si presente)..."
 rm -rf "$DEST/E2MultiPortal"
 
 echo "[3/5] Extraction vers $DEST ..."
-unzip -o "$TMP" -d "$DEST" > /dev/null
+tar -xzf "$TMP" -C "$DEST"
 
 echo "[4/5] Nettoyage des fichiers temporaires..."
 rm -f "$TMP"
