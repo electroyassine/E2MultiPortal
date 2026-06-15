@@ -87,10 +87,17 @@ http://<IP_DE_LA_BOX>:8070
 
 ---
 
-## 📋 Changelog
+## 🔄 Mise à jour depuis le menu principal
 
-Voir [`CHANGELOG.md`](CHANGELOG.md) pour l'historique détaillé des
-versions.
+Sur l'écran principal, le bouton **jaune "MISE A JOUR"** (à côté d'EXIT)
+vérifie directement sur GitHub si une nouvelle version est disponible :
+
+- Si une version plus récente existe, un message propose de l'installer
+  (Oui/Non).
+- En cas de confirmation, le plugin télécharge `E2MultiPortal.zip` depuis
+  `main`, remplace l'installation actuelle, puis propose de redémarrer
+  Enigma2 pour appliquer la mise à jour.
+- Si vous avez déjà la dernière version, un message vous le confirme.
 
 ---
 
@@ -99,3 +106,9 @@ versions.
 Ce plugin ne fournit **aucun contenu, identifiant ou abonnement**. Il s'agit
 uniquement d'un client permettant de se connecter à des portails MAG/Stalker
 ou Xtream Codes dont vous disposez déjà légalement.
+
+---
+
+## 👤 Auteur
+
+**ElectroYassine**
