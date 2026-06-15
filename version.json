@@ -1,7 +1,8 @@
 {
-  "version": "1.1.18",
-  "updated_at": "2026-06-15T20:50:00.000000",
+  "version": "1.1.19",
+  "updated_at": "2026-06-16T01:00:00.000000",
   "changelog": [
+    "Code source encodé AES-256-CBC+Base64 — protection complète de tous les fichiers .py (sauf plugin.py requis par Enigma2)",
     "Menu principal : EXIT deplace a gauche, nouveau bouton jaune 'MISE A JOUR' a cote -- verifie la version sur GitHub (version.json de la branche main) et propose l'installation (Oui/Non) si une nouvelle version est disponible",
     "Mise a jour : telechargement de E2MultiPortal.zip depuis GitHub, remplacement de l'installation, puis proposition de redemarrage Enigma2",
     "VOD : suppression des boutons 'Prec'/'Suiv' (pagination), indicateur centre",
