@@ -96,6 +96,5 @@ ou Xtream Codes dont vous disposez déjà légalement.
 ---
 
 ## 👤 Auteur
-
-ELECTRO YASSINE
-GitHub : @electroyassine
+**ELECTRO YASSINE**  
+GitHub : [@electroyassine](https://github.com/electroyassine)
