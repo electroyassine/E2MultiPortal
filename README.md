@@ -34,7 +34,7 @@ wget -q "--no-check-certificate" https://raw.githubusercontent.com/electroyassin
 
 Cette commande :
 
-1. télécharge la dernière version (`E2MultiPortal.zip`) ;
+1. télécharge la dernière version (`E2MultiPortal.tar.gz`) ;
 2. supprime l'ancienne installation si elle existe ;
 3. extrait directement dans
    `/usr/lib/enigma2/python/Plugins/Extensions/` ;
@@ -49,9 +49,12 @@ Le plugin apparaît ensuite dans le **menu principal → E2MultiPortal**.
 ### Installation manuelle
 
 1. Téléchargez
-   [`E2MultiPortal.zip`](https://github.com/electroyassine/E2MultiPortal/raw/refs/heads/main/E2MultiPortal.zip).
+   [`E2MultiPortal.tar.gz`](https://github.com/electroyassine/E2MultiPortal/raw/refs/heads/main/E2MultiPortal.tar.gz).
 2. Extrayez le dossier `E2MultiPortal` dans
-   `/usr/lib/enigma2/python/Plugins/Extensions/`.
+   `/usr/lib/enigma2/python/Plugins/Extensions/` :
+   ```sh
+   tar -xzf E2MultiPortal.tar.gz -C /usr/lib/enigma2/python/Plugins/Extensions/
+   ```
 3. Redémarrez Enigma2 (`init 4` puis `init 3`, ou via le menu).
 
 ---
