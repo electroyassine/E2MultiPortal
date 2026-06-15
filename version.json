@@ -1,37 +1,4 @@
 {
   "version": "2.0.0",
-  "updated_at": "2026-06-16T01:30:00.000000",
-  "changelog": [
-    "v2.0.0 : Bouton UPDATE (remplace MISE A JOUR), version 2.0 plugin et interface web",
-    "Menu principal : EXIT deplace a gauche, nouveau bouton jaune 'MISE A JOUR' a cote -- verifie la version sur GitHub (version.json de la branche main) et propose l'installation (Oui/Non) si une nouvelle version est disponible",
-    "Mise a jour : telechargement de E2MultiPortal.zip depuis GitHub, remplacement de l'installation, puis proposition de redemarrage Enigma2",
-    "VOD : suppression des boutons 'Prec'/'Suiv' (pagination), indicateur centre",
-    "VOD et SERIES : recherche dediee via bouton bleu 'RECHERCHE' sous LIRE (touche BLEUE)",
-    "Lecture (Live TV/VOD/Series) : le flux continue de jouer en arriere-plan quand on revient a la liste",
-    "CONFIG (SERVER SELECTION) : bouton bleu PLAYER -- choix du moteur de lecture video (GStreamer / ExtEplayer3 / GstPlayer)",
-    "Formulaire AJOUT/EDITION SERVEUR : nouveau design (carte avec bordure accent, 3 boutons centres)",
-    "CONFIG : conservation de la date d'expiration si on enregistre sans retester ; meilleure detection MAG",
-    "Menu principal : suppression du titre 'E2MultiPortal' et du texte 'IPTV Plugin vX.X.X', IP/Web agrandi, date d'expiration affichee a cote de 'Serveur actif'",
-    "CONFIG (SERVER SELECTION) : suppression des carreaux gris derriere chaque serveur",
-    "Menu principal : repositionnement de LIVE TV/VOD/SERIES/PLAYLIST/CONFIG sous les icones integrees a l'image skins/menu.png",
-    "VOD et SERIES : le cadre de l'affiche et la zone description/infos en #b49e86 (meme couleur que les colonnes)",
-    "PLAYLIST et CONFIG : nom de serveur agrandi et en gras (Bold;28)",
-    "LIVE TV / VOD / SERIES : couleur de fond de toutes les colonnes en #b49e86, texte non-selectionne fonce (#2a2014)",
-    "SERIES MAG : reecriture complete saisons/episodes (get_ordered_list movie_id/season_id composite + create_link pour la lecture), filtree par saison",
-    "SERIES MAG : episodes sans nom numerotes 'Episode N'",
-    "Interface web : bouton 'Editer' corrige (serversCache, /update_xtream, /update_mag)",
-    "Description (synopsis) films/series : nettoyage des titres avant recherche TMDB pour MAG et Xtream",
-    "Interface web : pied de page allege",
-    "Posters : stockage deplace vers /media/hdd ou /media/usb* si disponible",
-    "Live TV MAG : get_genres() multi-convention",
-    "VOD et SERIES Xtream : cache disque + touche MENU = rafraichissement manuel",
-    "Live TV MAG : suppression des 4 boutons EXIT/LIRE/RELOAD/TOUT",
-    "Correction crash lecteur (VOD et SERIES) lors de la fermeture du PlayerScreen",
-    "Correction crash SERIES _cur_serie",
-    "Version initiale E2MultiPortal",
-    "Séparation API Xtream et API MAG (Stalker)",
-    "Interface web améliorée port 8070",
-    "Support MAG Portail avec adresse MAC",
-    "Support Xtream Codes avec user/pass"
-  ]
+  "updated_at": "2026-06-16T01:30:00.000000"
 }
