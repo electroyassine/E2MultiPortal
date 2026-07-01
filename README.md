@@ -5,8 +5,6 @@ gestion de plusieurs serveurs **MAG/Stalker Portal** et **Xtream Codes**, avec
 Live TV, VOD, Séries, interface web embarquée, guide EPG 7 jours, contrôle
 parental PIN et téléchargement de films.
 
-**Version actuelle : v2.5.2**
-
 ---
 
 ## ✨ Fonctionnalités
@@ -16,7 +14,7 @@ parental PIN et téléchargement de films.
   et comptes Xtream Codes depuis l'écran **CONFIG**.
 - **Interface web embarquée** (port 8070) : gérez vos serveurs depuis n'importe
   quel navigateur sur le même réseau.
-- **Choix du lecteur vidéo** : GStreamer / ExtEplayer3 / GstPlayer, modifiable
+- **Choix du lecteur vidéo** : GStreamer / ExtEplayer3 , modifiable
   depuis CONFIG.
 - **Date d'expiration** du compte actif affichée sur l'écran principal.
 
@@ -51,41 +49,6 @@ parental PIN et téléchargement de films.
   90 jours).
 - Code réorganisé en sous-packages (`screens/`, `managers/`, `api/`) pour
   une maintenance facilitée.
-
----
-
-## 📁 Structure du plugin
-
-```
-E2MultiPortal/
-├── plugin.py          ← point d'entrée Enigma2
-├── main.py            ← écran principal / menu
-├── webserver.py       ← serveur HTTP port 8070
-├── tools.py
-├── version.json
-├── screens/
-│   ├── live.py        ← Live TV
-│   ├── vod.py         ← VOD (liste + fiche détail)
-│   ├── series.py      ← Séries
-│   ├── playlist.py    ← Playlists MAG
-│   ├── servers_list.py← CONFIG serveurs
-│   ├── player.py      ← lecteur vidéo
-│   ├── epg_screen.py  ← guide EPG 7 jours
-│   ├── pin_screen.py  ← saisie PIN parental
-│   └── movie_detail.py
-├── managers/
-│   ├── server_manager.py
-│   ├── parental_manager.py  ← PIN haché SHA-256
-│   ├── resume_manager.py    ← positions de reprise
-│   ├── poster_manager.py    ← affiches TMDB
-│   ├── epg_manager.py       ← cache XMLTV
-│   ├── cache_manager.py
-│   └── crypto_manager.py
-├── api/
-│   ├── api_xtream.py
-│   └── api_mag.py
-└── skins/             ← icônes et images
-```
 
 ---
 
@@ -151,60 +114,6 @@ http://<IP_DE_LA_BOX>:8070
 
 > Le code PIN par défaut après installation via script est **1234**.
 > Changez-le immédiatement depuis l'écran CONFIG → ROUGE.
-
----
-
-## 🕹️ Raccourcis clavier
-
-### Live TV
-
-| Touche | Action |
-|--------|--------|
-| OK | Lire la chaîne |
-| ROUGE | Config / vérification PIN parental |
-| BLEU | Guide EPG 7 jours |
-| MENU | Rafraîchir la liste |
-| EXIT | Retour |
-
-### VOD — liste catégories / films
-
-| Touche | Action |
-|--------|--------|
-| OK | Fiche détail du film |
-| VERT | Lire directement |
-| ROUGE | Config PIN parental |
-| 2 – 9 | Recherche T9 (filtre instantané) |
-| 0 | Effacer la recherche |
-| EXIT | Annuler recherche / Retour |
-
-### VOD — fiche détail
-
-| Touche | Action |
-|--------|--------|
-| OK / VERT | Lire |
-| JAUNE | Télécharger (wget arrière-plan) |
-| EXIT | Retour |
-
-### Séries — fiche détail / saisons / épisodes
-
-| Touche | Action |
-|--------|--------|
-| OK | Naviguer saisons → épisodes |
-| VERT | Lire l'épisode sélectionné |
-| 2 – 9 | Recherche T9 |
-| EXIT | Retour |
-
-### Pendant la lecture (Player)
-
-| Touche | Action |
-|--------|--------|
-| OK | Afficher / masquer l'OSD |
-| ← → | Reculer / Avancer ±30 s (VOD) · Chaîne précédente/suivante (Live) |
-| BLEU | Reculer 10 min (VOD) · Guide EPG (Live) |
-| JAUNE | Avancer 10 min (VOD) |
-| VERT | Recommencer depuis le début |
-| ↑ ↓ | Revenir à la liste (flux en cours maintenu) |
-| EXIT | Arrêter et quitter |
 
 ---
 
