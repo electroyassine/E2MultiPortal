@@ -1,9 +1,7 @@
 # E2MultiPortal
 
 Plugin IPTV multi-portails pour **Enigma2** — Octagon SF8008, Dreambox et compatibles.
-Gère simultanément plusieurs serveurs **MAG/Stalker Portal** et **Xtream Codes**.
-
-**Version : v3.2.0** · Compatible **OpenATV · OpenPLi · OpenBH · VTi**
+Gère simultanément plusieurs serveurs **MAG/Stalker Portal** et **Xtream Codes**
 
 ---
 
