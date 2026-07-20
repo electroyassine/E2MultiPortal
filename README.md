@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/electroyassine/E2MultiPortal/refs/heads/main/E2MultiPortal/skins/iconX4.png" width="80"/>
+<img src="https://github.com/electroyassine/E2MultiPortal/blob/main/icon.png" width="80"/>
 
 # E2MultiPortal
 
