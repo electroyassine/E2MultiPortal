@@ -4,7 +4,7 @@
 
 **Plugin IPTV pour Enigma2**
 
-[![Version](https://img.shields.io/badge/version-3.1.0-6366f1?style=flat-square)](#)
+[![Version](https://img.shields.io/badge/version-3.1.2-6366f1?style=flat-square)](#)
 [![Platform](https://img.shields.io/badge/platform-Enigma2-0284c7?style=flat-square)](#)
 
 Compatible **OpenATV · OpenPLi · OpenBH · VTi · EGAMI**
